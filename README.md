@@ -16,6 +16,8 @@ Efektem jest szereg wskaźników przedstawiających regularność i jakość wyp
 
 ### 2_Power_BI
 
+![Page1](2_Power_BI/assets/Page1.png)
+
 Projekt w Power BI wykorzystuje dane pozyskane z wcześniejszego projektu (1_Power_Query), dodatkowo rozszerza je o użycie **DAX** w celu uproszczenia obliczeń.  
 
 Celem jest przeliczenie wszystkich wskaźników wcześniej obliczanych w Power Query, co służy nauce DAX. Następnie uzyskane wskaźniki zostaną **znormalizowane i zwizualizowane w dashboardzie**, umożliwiając analizę dywidend spółek notowanych na GPW.  

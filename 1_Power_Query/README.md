@@ -173,8 +173,7 @@ W zapytaniu Wskaźniki_regularności przygotowano parametry:
 - dywidenda w ostatnim i poprzednim roku ➝ Waga: 7
 - Dywidenda w ostatnim roku ➝ Waga: 4
 - Ilość lat z dywidendą w całym zbiorze ➝ Waga: 6
-- Ilość lat z dywidendą w ostatnich 5 latach ➝ Waga: 7
-- Ilość lat bez dywidendy w ostatnich 10 latach ➝ Waga: 5
+
 
 Całe zapytanie do obliczenia powyższych parametrów:
 ```m
@@ -201,9 +200,7 @@ let
                 brakDywidendyOstatni and lataBezDywidendy},
         {"Ciągłość_Dywidend_2_lata", each Ciągłość_Dywidend(2,[Rok]) = 0, type logical},
         {"Dywidenda_w_Ostatnim_Roku", each List.Contains([Rok],Aktualny_rok - 1), type logical},
-        {"Ilość_Dywidend_w_Całym_Zbiorze", each List.Count([Rok])},
-        {"Ilość_Dywidend_w_Ostatnich_5_Latach", each 5 - Ciągłość_Dywidend(5,[Rok])},
-        {"Ilość_lat_bez_dywidendy_w_ostatnich_10_latach", each Ciągłość_Dywidend(10,[Rok])}
+        {"Ilość_Dywidend_w_Całym_Zbiorze", each List.Count([Rok])}
         }),
 
     Posortowane_wyniki = Table.Sort(Wskazniki_regularności,{{"Ticker", Order.Ascending}})
@@ -466,4 +463,5 @@ Wyznaczone wskaźniki o typie danych int oraz procent wraz z wartościami minima
 
 
 
-## Krok 7: Przygotowanie tabeli punktacji
+## Krok 7: Przeniesienie danych do PowerBI
+[Zobacz szczegóły projektu (README.md)](/2_Power_BI/README.md)

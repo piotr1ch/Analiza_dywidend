@@ -22,7 +22,3 @@ Projekt w Power BI wykorzystuje dane pozyskane z wcześniejszego projektu (1_Pow
 
 Celem jest przeliczenie wszystkich wskaźników wcześniej obliczanych w Power Query, co służy nauce DAX. Następnie uzyskane wskaźniki zostaną **znormalizowane i zwizualizowane w dashboardzie**, umożliwiając analizę dywidend spółek notowanych na GPW.  
 [Zobacz szczegóły projektu (README.md)](/2_Power_BI/README.md)
-
-## Uwagi
-
-- Każdy projekt może mieć osobne README w swoim folderze, ale główny README opisuje wszystkie projekty w repo.
